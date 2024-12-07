@@ -1,21 +1,12 @@
- Project Setup
-Download Assets:
 
-Download images, text, and other files from the Google Drive link.
-Create Project Files:
-
-Create a new folder named Bootslander-Project.
-Inside the folder, create these files and folders:
-css
-Copy code
 Bootslander-Project/
 ├── index.html
 ├── style.css
 └── assets/ (Place all images from Google Drive here)
+
 2️⃣ HTML Structure
 Basic Structure (index.html)
-html
-Copy code
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,11 +47,10 @@ Copy code
     </footer>
 </body>
 </html>
+
 3️⃣ CSS Styling (style.css)
 Global Styles
 
-css
-Copy code
 * {
     margin: 0;
     padding: 0;
@@ -78,8 +68,7 @@ a {
 }
 Header & Navigation
 
-css
-Copy code
+
 header {
     background: #007bff;
     color: #fff;
@@ -124,10 +113,8 @@ nav ul li a {
     border-radius: 5px;
     margin-top: 1rem;
 }
-About Section
 
-css
-Copy code
+About Section
 #about {
     padding: 4rem 0;
     background: #f4f4f9;
@@ -152,8 +139,7 @@ Copy code
 }
 Services Section
 
-css
-Copy code
+
 #services {
     padding: 4rem 0;
     text-align: center;
@@ -186,10 +172,8 @@ Copy code
     font-size: 1rem;
     color: #666;
 }
-Contact Section
 
-css
-Copy code
+contract section
 #contact {
     padding: 4rem 0;
     background: #007bff;
@@ -241,8 +225,7 @@ footer a {
 }
 4️⃣ Responsiveness
 Use CSS Media Queries to ensure responsiveness for tablets and mobiles.
-css
-Copy code
+
 @media (max-width: 768px) {
    nav ul {
        flex-direction: column;

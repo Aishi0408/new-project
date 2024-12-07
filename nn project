@@ -1,0 +1,264 @@
+ Project Setup
+Download Assets:
+
+Download images, text, and other files from the Google Drive link.
+Create Project Files:
+
+Create a new folder named Bootslander-Project.
+Inside the folder, create these files and folders:
+css
+Copy code
+Bootslander-Project/
+├── index.html
+├── style.css
+└── assets/ (Place all images from Google Drive here)
+2️⃣ HTML Structure
+Basic Structure (index.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootslander Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- Add Navigation Menu (Home, About, Services, Contact) -->
+        </nav>
+        <div class="hero-section">
+            <!-- Add Hero Text and Call-to-Action Buttons -->
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <!-- Add an "About Us" section with images and text -->
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <!-- Add Service Cards (at least 3-4) -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <!-- Add Contact Form -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Add footer information and social links -->
+    </footer>
+</body>
+</html>
+3️⃣ CSS Styling (style.css)
+Global Styles
+
+css
+Copy code
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+Header & Navigation
+
+css
+Copy code
+header {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.hero-section a {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+About Section
+
+css
+Copy code
+#about {
+    padding: 4rem 0;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+Services Section
+
+css
+Copy code
+#services {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#services h2 {
+    margin-bottom: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 1rem;
+    text-align: center;
+}
+
+.service-card img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+Contact Section
+
+css
+Copy code
+#contact {
+    padding: 4rem 0;
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 0.75rem 1.5rem;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+Footer
+
+css
+Copy code
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #007bff;
+}
+4️⃣ Responsiveness
+Use CSS Media Queries to ensure responsiveness for tablets and mobiles.
+css
+Copy code
+@media (max-width: 768px) {
+   nav ul {
+       flex-direction: column;
+   }
+
+   .hero-section h1 {
+       font-size: 2rem;
+   }
+
+   .service-card {
+       margin-bottom: 2rem;
+   }
+}
+
+@media (max-width: 480px) {
+   header, #about, #services, #contact {
+       padding: 2rem 1rem;
+   }
+}
